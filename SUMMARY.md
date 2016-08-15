@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [General Info](general-info/general-info.md)
 * [Getting Started](getting-started/getting-started.md)
+* Contributing to Payara
 * [Build Instructions](build-instructions/build-instructions.md)
 * [Release Notes](release-notes/release-notes.md)
    * [Payara Server 4.1.144 Release Notes](release-notes/release-notes-144.md)
@@ -33,5 +34,4 @@
    * [Classloading](documentation/extended-documentation/classloading.md)
 * Payara Micro Documentation
    * [Payara Micro Overview](documentation/payara-micro/payara-micro.md)
-* Contributing to Payara
 
