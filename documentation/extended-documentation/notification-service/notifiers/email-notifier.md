@@ -9,24 +9,26 @@ To use an email address as a notification target you must have a valid email add
 ## Configuration
 At a high level, the steps to configure the email notifier are:
 1. Within Payara create a JavaMail Session
-- Create the notifier using either the asadmin command or the Admin Console
+- Create the notifier using either the asadmin command or the Admin Console.
 
-### JavaMail Configuration
-If you don't already have a JavaMail session set up, you will need one to send the notifications. The steps to create a new JavaMail session in Payara are as follows:
+### Email Notifier Configuration
+If you don't already have a JavaMail session set up, you will need one to send the notifications. Instructions on setting up a JavaMail session can be found [here](/documentation/extended-documentation/javamail.md).
 
-#### From the Admin Console
+The steps to create an Email Notifier in Payara Server are as follows:
 
-1. JavaMail sessions are added from the `Resources` tab on the left pane of the Admin Console. Select `New` on the `Sessions` table to create a new JavaMail session.
+The email notifier is enabled from the Notification tab of your instance configuration. Here the jndiName of the JavaMail session and the intended address are entered. The email notifier supports a single email address.
 
-  ![](/assets/admin-console-javamail-location.png)
+  ![](/assets/admin-console-email-notifier-configuration-2.png)
 
-- Fill in the required fields. The example below shows configuring a mail host with an address of `mail.payara.fish`, where mail will be sent from the service from the address `payara@payara.fish`. You must ensure that you have added in your authentication details here.
+Mirroring the above screenshot for the Admin Console, to set up an email notifier using asadmin commands:
 
-  ![](/assets/admin-console-email-notifier-configuration.png)
+````Shell
+asadmin notification-email-configure --jndiName=emailNotifier --to=notifications@payara.fish --enabled=true --dynamic=true
+````
 
-- Once you have 
-#### Using asadmin Commands
-
+To check the currently applied configuration from asadmin, run the command:
 ```Shell
-asadmin create-javamail-resource --mailhost mail.payara.fish --mailuser _mailuser_ --fromaddress _fromaddress_ --property mail-smtp-starttls-enable=true:mail-smtp-auth=true:mail-smtp-password=_password_ mail/EmailNotifications
+asadmin get-email-notifier-configuration
 ```
+
+This will return the current configuration, whether it is enabled, the "to" address, and the JNDI name of the JavaMail session in use.
