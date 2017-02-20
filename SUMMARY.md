@@ -14,6 +14,8 @@
 ## Technical Documentation
 
 * [Core Documentation](documentation/core-documentation/core-documentation.md)
+  * [Server Configuration](documentation/core-documentation/configuration/configuration.md)
+    * [Variables in the configuration](documentation/core-documentation/configuration/var-substitution.md)
   * [JACC](documentation/core-documentation/jacc.md)
   * [Logging](documentation/core-documentation/logging/logging.md)
     * [Payara Logging Improvements](documentation/core-documentation/logging/payara/payara-specific.md)
@@ -36,7 +38,11 @@
     * [SQL Trace Listeners](documentation/extended-documentation/advanced-jdbc/sql-trace-listeners.md)
   * [JBatch](documentation/extended-documentation/jbatch.md)
   * [JCache](documentation/extended-documentation/jcache.md)
+    * [Cache provider and manager](documentation/extended-documentation/jcache/jcache-accessing.md)
+    * [Creating a Cache Instance](documentation/extended-documentation/jcache/jcache-creating.md)
+    * [Using JCache Annotations](documentation/extended-documentation/jcache/jcache-annotations.md)
   * [Hazelcast](documentation/extended-documentation/hazelcast.md)
+  * [Remote CDI Events](documentation/extended-documentation/cdi-events.md)
   * [Alternate Store for EJB Timers](documentation/extended-documentation/alternate-store-for-ejb-timers.md)
   * [Health Check Service](documentation/extended-documentation/health-check-service/health-check-service.md)
     * [Asadmin Commands](documentation/extended-documentation/health-check-service/asadmin-commands.md)
@@ -46,6 +52,7 @@
     * [Notifiers](documentation/extended-documentation/notification-service/notifiers.md)
       * [Hipchat Notifier](documentation/extended-documentation/notification-service/notifiers/hipchat-notifier.md)
       * [Email Notifier](documentation/extended-documentation/notification-service/notifiers/email-notifier.md)
+      * [Slack Notifier](documentation/extended-documentation/notification-service/notifiers/slack-notifier.md)
   * [Request Tracing Service](documentation/extended-documentation/request-tracing-service/request-tracing-service.md)
     * [Asadmin Commands](documentation/extended-documentation/request-tracing-service/asadmin-commands.md)
     * [Configuration](documentation/extended-documentation/request-tracing-service/configuration.md)
@@ -91,6 +98,7 @@
   * [Running Callable Objects](documentation/payara-micro/callable-objects.md)
   * [Request Tracing](documentation/payara-micro/services/request-tracing.md)
   * [Logging to a file](documentation/payara-micro/logging-to-file.md)
+  * [JCache in Payara Micro](documentation/payara-micro/jcache.md)
   * [Remote CDI Events](documentation/payara-micro/cdi-events.md)
   * [Persistent EJB timers](documentation/payara-micro/persistent-ejb-timers.md)
   * [Payara Micro Appendices](documentation/payara-micro/appendices/appendices.md)
@@ -103,6 +111,7 @@
 ## Appendices
 
 * [History of Release Notes](release-notes/release-notes-history.md)
+  * [Payara Server 4.1.1.164 Release Notes](release-notes/release-notes-164.md)
   * [Payara Server 4.1.1.163 Release Notes](release-notes/release-notes-163.md)
   * [Payara Server 4.1.1.162 Release Notes](release-notes/release-notes-162.md)
   * [Payara Server 4.1.1.161.1 Release Notes](release-notes/release-notes-161.1.md)
