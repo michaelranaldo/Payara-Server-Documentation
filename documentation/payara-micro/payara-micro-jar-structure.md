@@ -13,8 +13,14 @@ To make Payara Micro easier to work with and increase its future extensibility, 
 
 #### Default Packaging
 
-By default, Payara Micro will unpack the nested JARs into folders within the file system and then load them as classes. This is  faster to boot than previous versions of Payara Micro.
+By default, Payara Micro will unpack the nested JARs into folders within the file system and then load them as classes. This is  faster to boot than previous versions of Payara Micro. This requires no explicit command-line arguments.
 
 #### `--nested`
 
 The other option now available is launching Payara Micro with the `--nested` flag. This will load the classes directly from the nested JARs to the memory. While this slows boot by approximately 13%, the nested flag optimizes the nested JARs for random access.
+
+To load Payara Micro with the `--nested` flag:
+
+```Shell
+java -jar payara-micro.jar --nested
+```
