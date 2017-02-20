@@ -4,3 +4,4 @@ Payara Server's Notification service ships with a number of notifiers. As of {{ 
 
 * Log Notifier (default)
 * [HipChat Notifier](hipchat-notifier.md)
+* [SNMP Notifier](snmp-notifier.md)
