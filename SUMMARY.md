@@ -49,6 +49,7 @@
   * [Notification Service](documentation/extended-documentation/notification-service/notification-service.md)
     * [Asadmin Commands](documentation/extended-documentation/notification-service/asadmin-commands.md)
     * [Notifiers](documentation/extended-documentation/notification-service/notifiers.md)
+      * [Log Notifier](documentation/extended-documentation/notification-service/notifiers/log-notifier.md)
       * [Hipchat Notifier](documentation/extended-documentation/notification-service/notifiers/hipchat-notifier.md)
       * [Slack Notifier](documentation/extended-documentation/notification-service/notifiers/slack-notifier.md)
       * [XMPP Notifier](documentation/extended-documentation/notification-service/notifiers/xmpp-notifier.md)
