@@ -8,11 +8,12 @@ To use an email address as a notification target you must have a valid email add
 
 ## Configuration
 At a high level, the steps to configure the email notifier are:
+
 1. Within Payara create a JavaMail Session
-- Create the notifier using either the asadmin command or the Admin Console.
+1. Create the notifier using either the asadmin command or the Admin Console.
 
 ### Email Notifier Configuration
-If you don't already have a JavaMail session set up, you will need one to send the notifications. Instructions on setting up a JavaMail session can be found [here](/documentation/extended-documentation/javamail.md).
+If you don't already have a JavaMail session set up, you will need one to send the notifications. Instructions on setting up a JavaMail session can be found [here](/documentation/core-documentation/javamail.md).
 
 The steps to create an Email Notifier in Payara Server are as follows:
 
