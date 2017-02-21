@@ -1,19 +1,19 @@
 # Log Notifier
-The default output for the notification service is the `server.log`. More details on Payara Logging can be found [here](../core-documentation/logging/logging.md).
+The default output for the log notifier is the configured instance log file, which is either the `server.log` file or `cluster.log` file, depending on the instance configuration. More details on Payara Logging can be found [on the logging page](/documentation/core-documentation/logging/logging.md). The log notifier is the only notifier which is enabled by default when the notification service is activated.
 
 ## Configuration
 
-By default, Payara Server will send notifications from the [Notification service](/documentation/extended-documentation/notification-service/notification-service.md) to the logs when activated.
+By default, the log notifier will receive notifications from the [notification service](/documentation/extended-documentation/notification-service/notification-service.md) and outputs them to the configured logs when activated.
 
 ### Payara Configuration
 
-The log notifier is not automatically enabled when Payara starts - to enable log notifications run the command:
+The log notifier is, by default, disabled on startup. However, as the default notifier it is enabled when the [notification service](/documentation/extended-documentation/notification-service/notification-service.md) is enabled.
+
+To enable the log notifier specifically, run the command:
 
 ```Shell
 asadmin notification-log-configure --enabled=true --dynamic=true
 ```
-
-This will also enable the notification service. More details on specific commands for the notification service can be found [here](/documentation/extended-documentation/notification-service.md).
 
 ## Log Configuration
 
