@@ -1,26 +1,22 @@
 # Contributing to Payara
 
-As with many open source projects Payara is hosted on GitHub, allowing anyone to contribute code and help with its development. To make sure that development is coordinated and that changes are easily tracked, we have a series of steps that should be followed in order to get your code merged.
+As with many open source projects Payara is hosted on Github, allowing anyone to contribute code and help with its development. To make sure that development is coordinated and that changes are easily tracked, we have a series of steps that should be followed in order to get your code merged.
 
 ## Legal Bits
-Payara is an open source project; as part of this we have specific legal requirements concerning how we distribute code contributed to the project. Before any code contributed by our community is pulled into our repository we must have a signed Contributor License Agreement from any contributor. This can be downloaded from the main repository at [https://github.com/payara/Payara/blob/master/PayaraCLA.pdf](https://github.com/payara/Payara/blob/master/PayaraCLA.pdf) and should be signed, scanned, and forwarded to [info@payara.fish](mailto:info@payara.fish). As compensation for wading through the legalese, all contributors who send in a signed Contributor License Agreement receive a Payara goodie bag.
+Payara is an open source project; as part of this, we have specific legal requirements concerning how we distribute code contributed to the project. Before any code contributed by our community is pulled into our repository we must have a signed Contributor License Agreement from any contributor. This can be downloaded from the main repository at [https://github.com/payara/Payara/blob/master/PayaraCLA.pdf](https://github.com/payara/Payara/blob/master/PayaraCLA.pdf) and should be signed, scanned, and forwarded to [info@payara.fish](mailto:info@payara.fish). As compensation for wading through the legalese, all contributors who send in a signed Contributor License Agreement receive a Payara goodie bag.
 
-As we must also comply with Oracle's license the following line should be added to any changed file:
+As we must also comply with the upstream Oracle Common Development and Distribution license the following line should be added to any changed file:
 
 ```
-Portions Copyright [2016] Payara Foundation and/or its affiliates
+Portions Copyright [2016] C2B2 Consulting Limited and/or its affiliates
 ```
 
-## Getting the Payara Source Code
-You will need to create a personal GitHub account and fork the repository at [GitHub](https://github.com/payara/payara.git) to yourself. There are more detailed guides on GitHub, [here](https://guides.github.com/activities/forking/) and [here](https://guides.github.com/activities/contributing-to-open-source/), but the commands below should get you started:
-
-When on the Payara GitHub page, click on the "Fork" button on the top right. This will create your own fork of Payara as a remote repository on your GitHub account.
-
+## Getting Payara
+You will need to create a personal Github account and fork the repository at [ to yourself.
 ![](../images/forkingpayarafromgit.png)
+Once you have your own up-to-date version of payara, you can now download it to your computer.
 
-Once you have your own up-to-date fork of Payara, you can now clone the repository (creating a local repository on your computer).
-
-Install Git on your local environment and use the below command to download your remote copy of Payara:
+Install git on your local environment and use the below command to download your remote copy of payara:
 
 ```
 git clone https://github.com/<YourUsername>/Payara
