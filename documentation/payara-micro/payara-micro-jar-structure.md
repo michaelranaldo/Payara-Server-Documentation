@@ -3,7 +3,8 @@
 From Payara 4.1.1.171, Payara Micro has changed its JAR structure.
 
 ## Uber-JAR Structure
-There are a number of ways to structure an Uber-JAR - a jar file which contains both a project and all its dependencies. Previously, Payara Micro inherited the shaded jar format of Payara Embedded, where dependencies which shared packages were _shaded_ and renamed if they were not unique and all JARs were unpacked, then packed within a single JAR. The JVM classloader handled all of the internal classes and resources, with the Payara classloader only handling WAR files.
+Previously, Payara Micro inherited the shaded jar format of Payara Embedded, where dependencies which shared packages were _shaded_ and renamed if they were not unique and all JARs were unpacked, then packed within a single JAR.
+The JVM classloader handled all of the internal classes and resources, with the Payara classloader only handling WAR files.
 
 ### Nested JAR
 
