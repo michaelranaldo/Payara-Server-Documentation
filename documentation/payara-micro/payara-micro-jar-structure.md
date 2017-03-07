@@ -12,11 +12,14 @@ Payara Micro now uses a nested JAR format using code from Spring Boot. The Payar
 
 #### Default - Unpacking to File System (`--unpack`)
 
-By default, Payara Micro will unpack the nested JARs into a temporary directory within the directory specific by the system property `java.io.tmpdir` and then load them as classes. This is  faster to boot than previous versions of Payara Micro. This requires no explicit command-line arguments.
+By default, Payara Micro will unpack the nested JARs into a temporary directory within the directory specific by the system property `java.io.tmpdir` and then load them as classes.
+This results in a boot time comparably to the original boot, but with the advantages of fewer class collisions and safer extensibility.
+This requires no explicit command-line arguments.
 
 #### Unpacking to Memory (`--nested`)
 
-The other flag now available is `--nested`. This will load the classes directly from the nested JARs to the memory, but may slow boot.
+The other flag now available is `--nested`.
+This will load the classes directly from the nested JARs to the memory, but may slow boot.
 
 To start Payara Micro as a nested JAR, use the `--nested` option as shown:
 
