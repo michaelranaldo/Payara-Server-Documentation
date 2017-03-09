@@ -1,19 +1,20 @@
-# Payara Micro Jar Structure
+# Payara Micro JAR Structure
 
 From Payara 4.1.1.171, Payara Micro has changed its JAR structure.
 
 ## Uber-JAR Structure
-Previously, Payara Micro inherited the shaded jar format of Payara Embedded, where dependencies which shared packages were _shaded_ and renamed if they were not unique and all JARs were unpacked, then packed within a single JAR.
+Before 4.1.1.171, Payara Micro used a shaded JAR format.
+Shared packages were renamed and all of Payara Micro's dependencies were unpacked, then packed within a single JAR.
 The JVM classloader handled all of the internal classes and resources, with the Payara classloader only handling WAR files.
 
 ### Nested JAR
 
-Payara Micro now uses a nested JAR format using code from Spring Boot. The Payara classloader now handles the majority of internal classes and resources (leaving only a few essential classes to the JVM classloader) and  there are now two options for unpacking classes:
+Payara Micro now uses a nested JAR format using code from Spring Boot. The Payara Micro classloader now handles the majority of internal classes and resources (leaving only a few essential classes to the JVM classloader) and  there are now two options for unpacking classes:
 
-#### Default - Unpacking to File System (`--unpack`)
+#### Unpacking to File System (`--unpack`)
 
 By default, Payara Micro will unpack the nested JARs into a temporary directory within the directory specific by the system property `java.io.tmpdir` and then load them as classes.
-This results in a boot time comparably to the original boot, but with the advantages of fewer class collisions and safer extensibility.
+This change to Payara Micro results in a comparable boot time to previous Payara Micro releases, but with the added advantages of fewer class collisions and safer extensibility.
 This requires no explicit command-line arguments.
 
 #### Unpacking to Memory (`--nested`)
