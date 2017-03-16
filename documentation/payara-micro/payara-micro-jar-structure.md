@@ -26,16 +26,16 @@ payara-micro.jar
 
 | File | Description|
 |---|---|
-|fish/payara|Payara Micro's class files|
-|META-INF|Contains the Manifest, Pom, and Pom properties|
-|MICRO-INF/classes|Contains classes which are added to the classpath before those in /runtime|
+|fish/payara|Payara Micro's class files.|
+|META-INF|Contains the Manifest, Pom, and Pom properties.|
+|MICRO-INF/classes|Contains classes which are added to the classpath before those in /runtime.|
 |MICRO-INF/deploy|Contains WAR, EAR, and EJB-JAR files for deployment.|
 |MICRO-INF/domain|Contains domain.xml, default-web.xml, keystores, login.conf, logging.properties, and other files that are written to the temp file directory.|
-|MICRO-INF/lib|Contains additional third party dependency jars which will be added to the classpath automatically|
-|MICRO-INF/runtime|Contains the core runtime jars|
-|MICRO-INF/payara-boot.properties|The System properties file containing Payara Micro runtime flags. This overrides the runtime and can be overidden by command-line arguments|
-|MICRO-INF/post-boot-commands.txt|A txt file containing asadmin commands to execute post boot|
-|MICRO-INF/pre-boot-commands.txt|A txt file containing asadmin commands to execute before boot|
+|MICRO-INF/lib|Contains additional third party dependency jars which will be automatically added to the classpath.|
+|MICRO-INF/runtime|Contains the core runtime jars.|
+|MICRO-INF/payara-boot.properties|The System properties file containing Payara Micro runtime flags. This overrides the runtime and can be overidden by command-line arguments.|
+|MICRO-INF/post-boot-commands.txt|A txt file containing asadmin commands to execute post boot.|
+|MICRO-INF/pre-boot-commands.txt|A txt file containing asadmin commands to execute before boot.|
 
 ## Nested JAR
 
