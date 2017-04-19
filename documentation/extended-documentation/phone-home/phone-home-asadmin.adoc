@@ -39,5 +39,5 @@ Example:
 ---------------------------------
 asadmin> list-phone-home
 
-Phone Home Service is disabled
+Phone Home Service is disable
 ---------------------------------
