@@ -1,7 +1,10 @@
-_Payara Server and Micro 162 (4.1.1.162) onwards_
+[[phone-home-service]]
+Phone Home Service
+------------------
 
-The Phone Home Services offer three admin commands to enable/disable
-activity and to list the current setting.
+[[command-reference]]
+Command Reference
+~~~~~~~~~~~~~~~~~
 
 [[enable-phone-home]]
 `enable-phone-home`
@@ -28,3 +31,13 @@ and disables the running service
 
 *Aim:* Lists the current status of the Phone Home service as Enabled or
 Disabled
+
+[[example]]
+Example:
+++++++++
+
+---------------------------------
+asadmin> list-phone-home
+
+Phone Home Service is disabled
+---------------------------------
