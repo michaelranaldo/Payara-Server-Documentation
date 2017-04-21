@@ -10,7 +10,7 @@ Command Reference
 `enable-phone-home`
 ~~~~~~~~~~~~~~~~~~~
 
-*Usage:* `./asadmin enable-phone-home`
+*Usage:* `asadmin> enable-phone-home`
 
 *Aim:* Enables the Phone Home service. Command updates the domain.xml.
 
@@ -18,7 +18,7 @@ Command Reference
 `disable-phone-home`
 ~~~~~~~~~~~~~~~~~~~~
 
-*Usage:* `./asadmin disable-phone-home`
+*Usage:* `asadmin> disable-phone-home`
 
 *Aim:* Disables the Phone Home service. Command updates the domain.xml
 and disables the running service
@@ -27,17 +27,7 @@ and disables the running service
 `list-phone-home`
 ~~~~~~~~~~~~~~~~~
 
-*Usage:* `./asadmin list-phone-home`
+*Usage:* `asadmin> list-phone-home`
 
 *Aim:* Lists the current status of the Phone Home service as Enabled or
 Disabled
-
-[[example]]
-Example:
-++++++++
-
----------------------------------
-asadmin> list-phone-home
-
-Phone Home Service is disable
----------------------------------
