@@ -1,0 +1,5 @@
+= Hazelcast Overview
+
+Hazelcast is an In-Memory Data Grid, which provides Web and EJB session
+persistence, as well as acting as Payara Server's JSR107 (JCache)
+implementation.
