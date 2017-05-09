@@ -7,17 +7,17 @@ To enable Hazelcast for an instance:
 * Select the instance's configuration from
 the page tree:
 
-image::../../../assets/hazelcast-admin-console-select-instance-config.png[]
+image::assets/hazelcast-admin-console-select-instance-config.png[]
 
 * Click the "Hazelcast" button to view the "Hazelcast
 Configuration" page:
 
-image::../../../assets/hazelcast-admin-console-select-hazelcast.png[]
+image::assets/hazelcast-admin-console-select-hazelcast.png[]
 
 * Check "Enabled", and optionally "Dynamic" to apply
 the configuration without a restart, and save.
 
-image::../../../assets/hazelcast-admin-console-enable-hazelcast.png[]
+image::assets/hazelcast-admin-console-enable-hazelcast.png[]
 
 == Configuring Hazelcast
 
@@ -27,7 +27,7 @@ ensure that they either clone, or better, reference the edited configuration.
 
 The following configuration options are available here:
 
-image:../../../assets/hazelcast-admin-console-hazelcast-options.png[Payara 4.1.2.172 Hazelcast Options]
+image:assets/hazelcast-admin-console-hazelcast-options.png[Payara 4.1.2.172 Hazelcast Options]
 [cols=",",options="header",]
 |====
 |Property |Description
@@ -90,18 +90,18 @@ To set up Hazelcast for persistence:
 
 * Select the instance's configuration from the page tree:
 
-image::../../../assets/hazelcast-admin-console-select-instance-config.png[Payara 4.1.2.172 Page Tree]
+image::assets/hazelcast-admin-console-select-instance-config.png[Payara 4.1.2.172 Page Tree]
 
 * Select "Availability Service" to view the "Availability Service" page:
 
-image::../../../assets/hazelcast-admin-console-select-availability-service.png[Payara 4.1.2.172 Availability Service]
+image::assets/hazelcast-admin-console-select-availability-service.png[Payara 4.1.2.172 Availability Service]
 
 === Setting Web Persistence
 
 * Open the "Web Container Availability" tab, and select "Hazelcast" from the
 Persistence Type drop-down menu:
 
-image::../../../assets/hazelcast-admin-console-availability-enable-web-persistence.png[Payara 4.1.2.172 Web Persistence]
+image::assets/hazelcast-admin-console-availability-enable-web-persistence.png[Payara 4.1.2.172 Web Persistence]
 
 * Save the changes.
 
@@ -110,7 +110,7 @@ image::../../../assets/hazelcast-admin-console-availability-enable-web-persisten
 * Open the "EJB Container Availability" tab and select "Hazelcast" from the
 Persistence Type drop-down menu:
 
-image::../../../assets/hazelcast-admin-console-availability-enable-ejb-persistence.png[Payara 4.1.2.172 EJB Persistence]
+image::assets/hazelcast-admin-console-availability-enable-ejb-persistence.png[Payara 4.1.2.172 EJB Persistence]
 
 * Save the changes.
 
@@ -122,21 +122,21 @@ To view cluster members on the admin console:
 
 * Select an instance within the cluster you wish to view from the page tree:
 
-image::../../../assets/hazelcast-admin-console-select-instance.png[Payara 4.1.2.172 Page Tree]
+image::assets/hazelcast-admin-console-select-instance.png[Payara 4.1.2.172 Page Tree]
 
 * Open the "Hazelcast" tab and select the "Cluster Members" sub-tab to view
 the cluster members page:
 
-image::../../../assets/hazelcast-admin-console-view-cluster-members.png[Payara 4.1.2.172 Cluster Members]
+image::assets/hazelcast-admin-console-view-cluster-members.png[Payara 4.1.2.172 Cluster Members]
 
 === Viewing from the DAS
 
 * If your DAS is Hazelcast-enabled (change the `server-config` if not), select
 the "Domain" from the page tree:
 
-image::../../../assets/hazelcast-admin-console-select-das.png[Payara 4.1.2.172 Page Tree]
+image::assets/hazelcast-admin-console-select-das.png[Payara 4.1.2.172 Page Tree]
 
 * Open the "Hazelcast" tab and select the "Cluster Members" sub-tab to view
 the cluster members page:
 
-image::../../../assets/hazelcast-admin-console-view-cluster-members-from-domain.png[Payara 4.1.2.172 Domain Cluster Members]
+image::assets/hazelcast-admin-console-view-cluster-members-from-domain.png[Payara 4.1.2.172 Domain Cluster Members]
