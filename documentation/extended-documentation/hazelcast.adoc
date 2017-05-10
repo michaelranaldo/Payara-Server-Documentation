@@ -18,17 +18,17 @@ To enable Hazelcast for an instance:
 * Select the instance's configuration from
 the page tree:
 
-image::assets/hazelcast-admin-console-select-instance-config.png[Payara Server 4.1.2.172 Page Tree]
+image::/assets/hazelcast-admin-console-select-instance-config.png[Payara Server 4.1.2.172 Page Tree]
 
 * Click the "Hazelcast" button to view the "Hazelcast
 Configuration" page:
 
-image::assets/hazelcast-admin-console-select-hazelcast.png[Payara Server 4.1.2.172 Hazelcast Selection]
+image::/assets/hazelcast-admin-console-select-hazelcast.png[Payara Server 4.1.2.172 Hazelcast Selection]
 
 * Check "Enabled", and optionally "Dynamic" to apply
 the configuration without a restart, and save.
 
-image::assets/hazelcast-admin-console-enable-hazelcast.png[Payara Server 4.1.2.172 Enabling Hazelcast]
+image::/assets/hazelcast-admin-console-enable-hazelcast.png[Payara Server 4.1.2.172 Enabling Hazelcast]
 
 === Enabling Hazelcast using Asadmin
 
@@ -55,7 +55,7 @@ clone, or better, reference the edited configuration.
 
 The following configuration options are available here:
 
-image::assets/hazelcast-admin-console-hazelcast-options.png[Payara 4.1.2.172 Hazelcast Options]
+image::/assets/hazelcast-admin-console-hazelcast-options.png[Payara 4.1.2.172 Hazelcast Options]
 
 [cols=",",options="header",]
 |====
@@ -125,7 +125,7 @@ configuration. This command requires the admin server to be running on port
 
 *Command Options:*
 
-[cols=(,,,,),options="headers"]
+[cols=(,,,,),options="header"]
 |====
 |Option|Type|Description|Default|Mandatory
 |`--enabled`| Boolean| Enables Hazelcast. If no `target` is specified, this
@@ -212,19 +212,19 @@ To view cluster members on the admin console:
 
 * Select an instance within the cluster you wish to view from the page tree:
 
-image::assets/hazelcast-admin-console-select-instance.png[Payara 4.1.2.172 Page Tree]
+image::/assets/hazelcast-admin-console-select-instance.png[Payara 4.1.2.172 Page Tree]
 
 * Open the "Hazelcast" tab and select the "Cluster Members" sub-tab to view
 the cluster members page:
 
-image::assets/hazelcast-admin-console-view-cluster-members.png[Payara 4.1.2.172 Cluster Members]
+image::/assets/hazelcast-admin-console-view-cluster-members.png[Payara 4.1.2.172 Cluster Members]
 
 ==== Viewing from the DAS
 
 * If your DAS is Hazelcast-enabled (change the `server-config` if not), select
 the "Domain" from the page tree:
 
-image::assets/hazelcast-admin-console-select-das.png[Payara 4.1.2.172 Page Tree]
+image::/assets/hazelcast-admin-console-select-das.png[Payara 4.1.2.172 Page Tree]
 
 * Open the "Hazelcast" tab and select the "Cluster Members" sub-tab to view
 the cluster members page:
@@ -306,18 +306,18 @@ To set up Hazelcast for persistence:
 
 * Select the instance's configuration from the page tree:
 
-image::assets/hazelcast-admin-console-select-instance-config.png[Payara 4.1.2.172 Page Tree]
+image::/assets/hazelcast-admin-console-select-instance-config.png[Payara 4.1.2.172 Page Tree]
 
 * Select "Availability Service" to view the "Availability Service" page:
 
-image::assets/hazelcast-admin-console-select-availability-service.png[Payara 4.1.2.172 Availability Service]
+image::/assets/hazelcast-admin-console-select-availability-service.png[Payara 4.1.2.172 Availability Service]
 
 ==== Setting Web Persistence
 
 * Open the "Web Container Availability" tab, and select "Hazelcast" from the
 Persistence Type drop-down menu:
 
-image::assets/hazelcast-admin-console-availability-enable-web-persistence.png[Payara 4.1.2.172 Web Persistence]
+image::/assets/hazelcast-admin-console-availability-enable-web-persistence.png[Payara 4.1.2.172 Web Persistence]
 
 * Save the changes.
 
@@ -326,7 +326,7 @@ image::assets/hazelcast-admin-console-availability-enable-web-persistence.png[Pa
 * Open the "EJB Container Availability" tab and select "Hazelcast" from the
 Persistence Type drop-down menu:
 
-image::assets/hazelcast-admin-console-availability-enable-ejb-persistence.png[Payara 4.1.2.172 EJB Persistence]
+image::/assets/hazelcast-admin-console-availability-enable-ejb-persistence.png[Payara 4.1.2.172 EJB Persistence]
 
 * Save the changes.
 
@@ -362,7 +362,7 @@ configuration. This command requires the admin server to be running on port
 
 *Command Options:*
 
-[cols=(,,,,),options="headers"]
+[cols=(,,,,),options="header"]
 |====
 |Option|Type|Description|Default|Mandatory
 |`--enabled`| Boolean| Enables Hazelcast. If no `target` is specified, this
@@ -446,7 +446,7 @@ types.
 
 *Command Options:*
 
-[cols=(,,,,),options="headers"]
+[cols=(,,,,),options="header"]
 |====
 |Option|Type|Description|Default|Mandatory
 
@@ -555,7 +555,7 @@ asadmin> create-hazelcast-instance --webpersistence=false --lite instance2
 
 *Command Options:*
 
-[cols=(,,,,),options="headers"]
+[cols=(,,,,),options="header"]
 |====
 |Option|Type|Description|Default|Mandatory
 |`--target`|Instance or Cluster Name|Specifies a particular config|
@@ -581,7 +581,7 @@ hazelcast-config.xml  true     5900        224.2.2.3       54327          payara
 
 *Command Options:*
 
-[cols=(,,,,),options="headers"]
+[cols=(,,,,),options="header"]
 |====
 |Option|Type|Description|Default|Mandatory
 |`--type`|`server` or `micro`|Specifies the type of cluster to locate|_Both_|No
@@ -606,7 +606,7 @@ server         server-config   DAS            127.0.1.1  8080        8181       
 
 *Command Options:*
 
-[cols=(,,,,),options="headers"]
+[cols=(,,,,),options="header"]
 |====
 |Option|Type|Description|Default|Mandatory
 |`--target`|Instance or cluster name|Specifies the targeted instance or
@@ -631,7 +631,7 @@ asadmin> list-hazelcast-members
 
 *Command Options:*
 
-[cols=(,,,,),options="headers"]
+[cols=(,,,,),options="header"]
 |====
 |Option|Type|Description|Default|Mandatory
 |`--target`|Instance or cluster name|Specifies the targeted instance or
