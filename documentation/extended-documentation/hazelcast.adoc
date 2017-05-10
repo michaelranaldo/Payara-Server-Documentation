@@ -1,9 +1,10 @@
 = Hazelcast
 
-This page covers how to use the Hazelcast functionality in Payara 4.1.1.162.
+This page covers how to use the Hazelcast functionality in Payara Server
+4.1.2.172.
 
 Hazelcast is an In-Memory Data Grid, providing Web and EJB session
-persistence, and implementing JSR107 (JCache) in Payara Server.
+persistence as well as implementing JSR107 (JCache) in Payara Server.
 
 == Enabling Hazelcast
 
@@ -113,7 +114,7 @@ this feature to work correctly.
 [[configuring-hazelcast-using-asadmin]]
 === Configuring Hazelcast using Asadmin
 
-The _set-hazelcast_configuration_ asadmin command is used to both
+The _set-hazelcast-configuration_ asadmin command is used to both
 enable/disable Hazelcast, and to configure it. You can pass the _--help_
 option to the command to see usage instructions in your terminal.
 
@@ -199,7 +200,7 @@ feature to work correctly.|_false_|No
 The following example demonstrates setting all of the options on a
 cluster called _cluster1_:
 
-`asadmin set-hazelcast-configuration --enabled=true --target=cluster1 --dynamic=true -f hazelcast-config.xml --startport=5902 -g 224.2.2.3 --multicastport=6666 --hostAwareParitioning=true -j payara/Hazelcast`
+`asadmin> set-hazelcast-configuration --enabled=true --target=cluster1 --dynamic=true -f hazelcast-config.xml --startport=5902 -g 224.2.2.3 --multicastport=6666 --hostAwareParitioning=true -j payara/Hazelcast`
 
 
 == Viewing Hazelcast From the Admin Console
@@ -229,7 +230,7 @@ image::/assets/hazelcast-admin-console-select-das.png[Payara 4.1.2.172 Page Tree
 * Open the "Hazelcast" tab and select the "Cluster Members" sub-tab to view
 the cluster members page:
 
-image::assets/hazelcast-admin-console-view-cluster-members-from-domain.png[Payara 4.1.2.172 Domain Cluster Members]
+image::/assets/hazelcast-admin-console-view-cluster-members-from-domain.png[Payara 4.1.2.172 Domain Cluster Members]
 
 == Using Hazelcast in your Applications
 
@@ -254,7 +255,7 @@ import javax.naming.InitialContext;
 
 To import the Hazelcast package, you will need to set the Payara
 Hazelcast package as a dependency in the project _pom.xml_ file (for
-Maven projects), or for you to set the Hazelcast JAR as a project
+Maven projects), or have the Hazelcast JAR set as a project
 dependency (if using a non-Maven based project). To add the Payara
 Hazelcast package as a dependency in a pom, enter the following in the
 dependencies section of your pom:
@@ -273,7 +274,7 @@ dependencies section of your pom:
 The Hazelcast JAR (for non-Maven projects), can either be downloaded
 from the http://hazelcast.org/download/[Hazelcast website], or you can
 make use of the JAR packaged with Payara. The JAR packaged with Payara
-can be found at _$\{Product-Root}/glassfish/modules/hazelcast.jar_.
+can be found at _<Payara Installation Directory>/glassfish/modules/hazelcast.jar_.
 
 The following will initialise a _HazelcastInstance_ variable with the
 instance embedded in Payara:
@@ -281,7 +282,7 @@ instance embedded in Payara:
 [code,Java]
 ----
 Context ctx = new InitialContext();
-HazelcastInstance instance = (HazelcastInstace) ctx.lookup("payara/Hazelcast");
+HazelcastInstance instance = (HazelcastInstance) ctx.lookup("payara/Hazelcast");
 ----
 
 You will have to wrap this in a try-catch clause, or throw the
@@ -290,11 +291,8 @@ _Naming Exception_ that this could generate.
 [[using-hazelcast-for-the-web-and-ejb-container-persistence]]
 == Using Hazelcast for the Web and EJB Container Persistence
 
-You can use Hazelcast as the persistence provider for the Web and EJB
-Container in a cluster. Hazelcast must be enabled for this to work (Note, even
-if Hazelcast is not enabled, you will still be able to select Hazelcast
-as the persistence provider; the persistence will fail in these
-circumstances).
+Hazelcast can be used as the persistence provider for both Web and EJB
+containers.
 
 [[setting-hazelcast-as-the-persistence-provider-through-the-admin-console]]
 === Setting Hazelcast as the Persistence provider through the Admin Console
@@ -340,13 +338,13 @@ the _set_ command.
 ==== For the Web Container
 
 To set Hazelcast as the persistence provider of the Web Container, run:
-`asadmin set ${Cluster-Config}.availability-service.web-container-availability.persistence-type=hazelcast`
+`asadmin> set ${Cluster-Config}.availability-service.web-container-availability.persistence-type=hazelcast`
 
 [[for-the-ejb-container-1]]
 ==== For the EJB Container
 
 To set Hazelcast as the persistence provider of the EJB Container, run:
-`asadmin set ${Cluster-Config}.availability-service.ejb-container-availability.sfsb-ha-persistence-type=hazelcast`
+`asadmin> set ${Cluster-Config}.availability-service.ejb-container-availability.sfsb-ha-persistence-type=hazelcast`
 
 
 [[asadmin-commands]]
