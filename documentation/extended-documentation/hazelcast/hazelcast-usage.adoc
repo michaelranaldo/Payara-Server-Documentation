@@ -1,0 +1,60 @@
+= Using Hazelcast in your Applications
+
+This page details how to use the Payara Servers embedded Hazelcast within your
+code.
+
+[[accessing-the-jndi-registered-hazelcast-instance]]
+== Accessing the JNDI registered Hazelcast instance
+
+By default, the JNDI name of the hazelcast instance is
+_payara/Hazelcast_, though this can be altered using the
+`set-hazelcast-configuration` command.
+
+You will need to import the following packages into your Java class:
+
+[code,Java]
+----
+import com.hazelcast.core.HazelcastInstance;
+import javax.naming.Context;
+import javax.naming.InitialContext;
+----
+
+To import the Hazelcast package, you will need to set the Payara
+Hazelcast package as a dependency in the project _pom.xml_ file (for
+Maven projects), or have the Hazelcast JAR set as a project
+dependency (if using a non-Maven based project). To add the Payara
+Hazelcast package as a dependency in a pom, enter the following in the
+dependencies section of your pom:
+
+[code,Maven_POM]
+----
+<dependency>
+  <groupId>fish.payara.api</groupId>
+  <artifactId>payara-api</artifactId>
+  <version>{{ book.currentVersion }}</version>
+</dependency>
+----
+
+
+The Hazelcast JAR (for non-Maven projects), can either be downloaded
+from the link::http://hazelcast.org/download/[Hazelcast website], or you can
+make use of the JAR packaged with Payara. The JAR packaged with Payara
+can be found at _<Payara Installation Directory>/glassfish/modules/hazelcast.jar_.
+
+The following will initialise a `HazelcastInstance` variable with the
+instance embedded in Payara:
+
+[code,Java]
+----
+Context ctx = new InitialContext();
+HazelcastInstance instance = (HazelcastInstance) ctx.lookup("payara/Hazelcast");
+----
+
+You will have to wrap this in a try-catch clause, or throw the
+_Naming Exception_ that this could generate.
+
+== Using Hazelcast for Web and EJB persistence
+
+Hazelcast can be configured as the Web and EJB container's persistence provider,
+either from the link::/documentation/extended-documentation/hazelcast/hazelcast-admin-console-commands.adoc[Admin Console]
+ or via the link::/documentation/extended-documentation/hazelcast/hazelcast-asadmin-commands.adoc[_asadmin_ commands].
