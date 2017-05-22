@@ -1,12 +1,12 @@
 = Using Hazelcast in your Applications
 
-This page details how to use the Payara Servers embedded Hazelcast within your
+This page details how to use the Payara Server's embedded Hazelcast within your
 code.
 
 [[accessing-the-jndi-registered-hazelcast-instance]]
 == Accessing the JNDI registered Hazelcast instance
 
-By default, the JNDI name of the hazelcast instance is
+By default, the JNDI name of the Hazelcast instance is
 _payara/Hazelcast_, though this can be altered using the
 `set-hazelcast-configuration` command.
 
@@ -36,10 +36,10 @@ dependencies section of your pom:
 ----
 
 
-The Hazelcast JAR (for non-Maven projects), can either be downloaded
+To use the Hazelcast JAR (for non-Maven projects), you can either download
 from the link::http://hazelcast.org/download/[Hazelcast website], or you can
-make use of the JAR packaged with Payara. The JAR packaged with Payara
-can be found at _<Payara Installation Directory>/glassfish/modules/hazelcast.jar_.
+make use of the JAR packaged with Payara Server, which can be found at
+_<Payara Installation Directory>/glassfish/modules/hazelcast.jar_.
 
 The following will initialise a `HazelcastInstance` variable with the
 instance embedded in Payara:
