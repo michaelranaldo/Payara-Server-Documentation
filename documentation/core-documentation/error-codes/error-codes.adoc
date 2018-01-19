@@ -6,7 +6,7 @@ with diagnosing issues, bugs, and exceptions within Payara Server. This page
 documents those error codes produced by Payara Server; other components, such as
 Weld, can be found within their own documentation.
 
-- link:/documentation/core-documentation/error-codes/catalina-error-codes.adoc[PWD: Catalina Error Codes]
+- link:/documentation/core-documentation/error-codes/catalina-error-codes.adoc[PWC: Catalina Error Codes]
 - link:/documentation/core-documentation/error-codes/cli-error-codes.adoc[CLI: CLI Error Codes]
 - link:/documentation/core-documentation/error-codes/connector-error-codes.adoc[RAR: Connector Error Codes]
 - link:/documentation/core-documentation/error-codes/deployment-error-codes.adoc[DEP: Deployment Error Codes]
