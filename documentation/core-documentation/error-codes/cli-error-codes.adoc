@@ -1,0 +1,260 @@
+[[cli-error-codes]]
+= CLI Error codes (CLI)
+
+CLI error codes are produced by the asadmin command line interface.
+
+|===
+|Error Code | Description
+
+|CLI001
+|Invalid Command: `<command>`. Check the entry of the command name. This command
+may be provided by a package that is not installed.
+
+|CLI002
+|Unable to create command object, `<object>`.
+
+|CLI003
+|No descriptors defined.
+
+|CLI004
+|Could not load the descriptor URLs.
+
+|CLI005
+|Could not write the command, `<command>` to a file.
+
+|CLI006
+|Could not write the component, `<component name>` to a file.
+
+|CLI007
+|Invalid file path, `<file path>`.
+
+|CLI008
+|Could not set the serialize directory.
+
+|CLI009
+|Could not find LocalStrings.properties file.
+
+|CLI010
+|Value not specified for `<option>`.
+
+|CLI011
+|Invalid option, `<option>`.
+
+|CLI012
+|Could not validate command.
+
+|CLI013
+|Option `<option>` does not apply to `<argument>`.
+
+|CLI014
+|`<option>` is a required option. In case of password information, use
+`passwordfile` option.
+
+|CLI015
+|Invalid value for `<option>`.  Option accepts `true` or `false`.
+
+|CLI016
+|Invalid number of operands. Number of operands should be `0` or `1`.
+
+|CLI017
+|Invalid number of operands.  Number of operands should be greater than `1`.
+
+|CLI018
+|Invalid number of operands.  Number of operands should be greater than or
+equal to `<accepted number of operands>`.
+
+|CLI019
+|Invalid number of operands.  Number of operands should be equal to
+`<accepted number of operands>`.
+
+|CLI020
+|Operand is required.
+
+|CLI021
+|Number of operand should be between `<minimum number of operands>` and
+`<maximum number of operands>`.
+
+|CLI022
+|Invalid syntax for numberofoperands, `<invalid number of operands>`.
+
+|CLI023
+|Command not specified.
+
+|CLI024
+|Could not read input stream.
+
+|CLI025
+|An escape character is required in your input.
+
+|CLI026
+|Multiple declaration of option `"<option>"` in the descriptor file.
+
+|CLI028
+|DeprecatedOption `"<option>"` is not defined in descriptor file.
+
+|CLI028
+|RequiredOption `"<option>"` is not defined in descriptor file.
+
+|CLI029
+|Option name `"<option>"` is already defined in command, `"<command>"`.
+
+|CLI030
+|Short Option `"<option>"` for options `"<option 1>"` and `"<option 2>"` is
+already defined in command, `"<command>"`.
+
+|CLI031
+|Can't upload a directory, specify `--upload=false`.
+
+|CLI031
+|Warning: Option `"<option>"` is obsolete and will be ignored.
+
+|CLI128
+|Value for `<password>` must have 8 or more characters.
+
+|CLI129
+|Invalid character in domain name, `<domain name>`.
+
+|CLI1306
+|Warning - server instance is not running.
+
+|CLI1307
+|Warning - no server instance found with that name.
+
+|CLI130
+|Could not create domain, `<domain name>`.
+
+|CLI136
+|Port `<port>` should be a numeric value.
+
+|CLI138
+|Invalid domain path, `<domain path>`.
+
+|CLI139
+|Could not delete domain, `<domain name>`.
+
+|CLI141
+|No Domains to list.
+
+|CLI142
+|No domains in `<domains directory>`.
+
+|CLI146
+|File does not exist: `<file>`.
+
+|CLI146
+|`<file>` does not exist in the file system or read permission denied.
+
+|CLI148
+|Could not set environment variable: `<environment variable>`
+
+Variable names must start with `"AS_ADMIN_"` or `"AS_"`.
+
+|CLI149
+|Environment variable is not set: `<environment variable>`.
+
+|CLI155
+|`<domain xml>` does not exist.
+
+|CLI160
+|Invalid Port `<port>`, should be between 1 and 65535.
+
+|CLI163
+|Could not unset environment variable: `<environment variable>`.
+
+Variable names must start with `"AS_ADMIN_"` or `"AS_"`.
+
+|CLI169
+|Options `<option 1>` and `<option 2>` are mutually exclusive.  You must
+specify one or the other but not both.
+
+|CLI173
+|Values entered for `<password>` (_and <password confirmation>_) do not match.
+
+|CLI193
+|Password option `"<option>"` is not allowed on the command line. Please use
+the `--passwordfile` option or the admin command's login sub-command.
+
+|CLI194
+|Previously supported command: `<command>` is not supported for this release.
+
+|CLI195
+|Implementation for the command `<command>` exists in the system,
+
+but it has no `@Scoped` annotation.
+
+|CLI196
+|Implementation for the command `<command>` exists in the system,
+
+but it's a singleton that also has parameters.
+
+|CLI197
+|New password must not be null when secure-admin is enabled.
+
+|CLI198
+|The admin realm is not a file based realm. The admin password cannot be
+changed locally.
+
+|CLI199
+|This command cannot be executed locally.
+
+|CLI211
+|Invalid Port `<port number>` for `<service>`, should be between `1` and
+`65535`.  Choose a portbase value such that the resulting port number doesn't
+exceed `65535`.
+
+|CLI251
+|Either option `--target` or operand `config_name` is required for this command.
+
+|CLI254
+|Please specify either `--lbname` or `--config`, not both.
+
+|CLI300
+|The specified domaindir is not a directory: `<domain directory>`.
+
+|CLI301
+|There is no such domain directory: `<domain directory>`
+
+|CLI304
+|Cannot find domain.xml.  It should be here: `<domain xml path>`
+
+|CLI306
+|Warning - The server located at `<domain name>` is not running.
+
+No domain are currently running.
+
+|CLI306
+|Warning - The server located at `<domain name>` is not running.
+
+Please specify one of the currently running domains.
+
+|CLI307
+|Warning - remote server is not running, unable to force it to stop.
+
+|CLI800
+|das.properties file is missing, expected to find it here:
+`<das.properties path>`.
+
+|CLI801
+|Instance is already synchronized.
+
+|CLI802
+|Synchronization failed for directory `<directory>`, caused by:
+
+`<exception>`.
+
+|CLI803
+|Failed to synchronize with DAS on host `<host address>`, port `<port>`.
+
+|CLI810
+|Synchronization with DAS failed and no local domain.xml,
+
+can't start instance.
+
+|CLI811
+|Warning: failed to update `das.properties` file.
+
+|CLI812
+|das.properties file at `<das.properties path>`
+
+specifies an unknown protocol: `<protocol>`.
+|===

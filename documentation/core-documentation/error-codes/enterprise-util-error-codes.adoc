@@ -1,0 +1,16 @@
+[[enterprise-util-error-codes]]
+= Enterprise Util Error codes
+
+The enterprise util error codes detail output from the internal Sun Enterprise
+Utility commands.
+
+|===
+|Error Code | Description
+
+|UTIL6046
+|`_Deprecated : This error is no longer thrown_`
+
+Attempt to rename `<old file name>` to `<new file name>` failed after
+`<number of retries>` retries.
+
+|===

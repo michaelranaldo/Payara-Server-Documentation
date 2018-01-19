@@ -1,0 +1,43 @@
+[[load-balancer-error-codes]]
+= Load Balancer Error Codes (EEADM)
+
+The load balancer error codes detail output from the Load Balancer commands.
+
+|===
+|Error Code | Description
+
+|EEADM00210
+|`*_Not an error_*`
+
+Health checker created for `<target>`.
+
+|EEADM0201
+|No load balancer configurations defined.
+
+|EEADM0201
+|No load balancer configurations defined.
+
+|EEADM0202
+|Load balancer configuration `<target>` created.
+
+|EEADM0203
+|Load balancer configuration `<target>` deleted.
+
+|EEADM0211
+|Health checker deleted for `<target>`.
+
+|EEADM0212
+|Added server `<target>` to load balancer `<config name>`.
+
+|EEADM0213
+|Added cluster `<target>` to load balancer `<config name>`.
+
+|EEADM0214
+|Deleted server `<target>` from load balancer `<config name>`.
+
+|EEADM0215
+|Deleted cluster `<target>` from load balancer `<config name>`.
+
+|EEADM0216
+|No load balancer defined.
+|===

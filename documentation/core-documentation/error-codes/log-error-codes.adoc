@@ -1,0 +1,95 @@
+[[log-error-codes]]
+= Log Error Codes (LOG)
+
+The following error codes are error codes which can be thrown by the
+`LogException` class.
+
+|===
+|Error Codes | Description
+|LOG000
+|Operation successful.
+
+|LOG001
+|Log not initialised.
+
+|LOG002
+|Open failure.
+
+|LOG003
+|Read failure.
+
+|LOG004
+|Data corrupted.
+
+|LOG005
+|Invalid file descriptor.
+
+|LOG006
+|Lock failure.
+
+|LOG007
+|Write failure.
+
+|LOG008
+|Close failure.
+
+|LOG009
+|Too many input buffers.
+
+|LOG010
+|Record too large.
+
+|LOG011
+|No space in filesystem.
+
+|LOG012
+|Insufficient memory.
+
+|LOG013
+|Force failure.
+
+|LOG014
+|Invalid LSN value.
+
+|LOG015
+|New tail LSN too high.
+
+|LOG016
+|New tail LSN too low.
+
+|LOG017
+|Invalid tail LSN value.
+
+|LOG018
+|Internal error.
+
+|LOG019
+|No restart record present.
+
+|LOG020
+|Invalid cursor value.
+
+|LOG021
+|End of cursor reached.
+
+|LOG022
+|Filesystem access failure.
+
+|LOG023
+|Invalid process.
+
+|LOG024
+|Log is read only.
+
+|LOG025
+|Invalid record type specified.
+
+|LOG026
+|Extent file open failure.
+
+|LOG027
+|Invalid write mode specified.
+
+|LOG028
+|Invalid status specified.
+|===

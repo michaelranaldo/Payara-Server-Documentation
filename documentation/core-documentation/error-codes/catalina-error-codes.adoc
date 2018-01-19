@@ -1,0 +1,29 @@
+[[catalina-error-codes]]
+= Apache Catalina Error Codes (PWC)
+
+Apache Catalina error codes are produced by the embedded Apache Catalina.
+While there is a slight divergence, most documentation for Apache Catalina will
+also apply to the internal build.
+
+|===
+|Error Codes | Description
+
+|PWC2310
+|An exception occurs when running the `PrivilegedExceptionAction` block.
+
+|PWC2785
+|Cannot serialize session attribute `<session attribute>` for session
+`<session name>`.
+
+|PWC3013
+|Missing application `web.xml`, using defaults only.
+
+|PWC3507
+|An exception occurs when running the `PrivilegedExceptionAction` block.
+
+|PWC3710
+|Access Logger has already been started.
+
+|PWC3711
+|Access Logger has not yet been started.
+|===

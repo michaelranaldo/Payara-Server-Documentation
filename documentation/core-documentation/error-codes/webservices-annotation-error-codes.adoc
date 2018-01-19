@@ -1,0 +1,37 @@
+[[webservices-annotation-error-codes]]
+= WebServices Annotation Error Codes
+
+|===
+|Error Code |Description
+
+|WS00022
+|Symbol annotation can only be specified on TYPE.
+
+|WS00023
+|Exception in processing @Webservice : `<webservice-name>`.
+
+|WS00024
+|class `<class-name>` referenced from annotation symbol cannot be loaded.
+
+|WS00025
+|SEI `<annotation-endpoint-interface>` referenced from the @WebService
+annotation on `<annotation-element>`  does not contain a @WebService annotation.
+
+|WS00026
+|SEI `<annotation-endpoint-interface>` cannot have @BindingType.
+
+|WS00027
+|Target Namespace in wsdl-service element does not match
+@WebService.targetNamespace.
+
+|WS00028
+|Target Namespace for wsdl-service and wsdl-port should be the same.
+
+|WS00029
+|The javax.jws.WebService annotation targetNamespace must be used for classes or
+ interfaces that are in no package.
+
+|WS00041
+|Service invocation threw an exception with message :  `{0}`; Refer to the
+server log for more details.
+|====

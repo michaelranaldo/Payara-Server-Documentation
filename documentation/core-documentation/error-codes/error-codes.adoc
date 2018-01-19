@@ -1,0 +1,16 @@
+[[error-codes]]
+= Error Codes
+
+Payara Server has a number of legacy error codes from GlassFish which can help
+with diagnosing issues, bugs, and exceptions within Payara Server. This page
+documents those error codes produced by Payara Server; other components, such as
+Weld, can be found within their own documentation.
+
+- link:/documentation/core-documentation/error-codes/catalina-error-codes.adoc[PWD: Catalina Error Codes]
+- link:/documentation/core-documentation/error-codes/cli-error-codes.adoc[CLI: CLI Error Codes]
+- link:/documentation/core-documentation/error-codes/connector-error-codes.adoc[RAR: Connector Error Codes]
+- link:/documentation/core-documentation/error-codes/deployment-error-codes.adoc[DEP: Deployment Error Codes]
+- link:/documentation/core-documentation/error-codes/enterprise-util-error-codes.adoc[UTIL: Enterprise Util Error Codes]
+- link:/documentation/core-documentation/error-codes/loadbalancer-error-codes.adoc[EEADM: Load Balancer Error Codes]
+- link:/documentation/core-documentation/error-codes/log-error-codes.adoc[LOG: Log Error Codes]
+- link:/documentation/core-documentation/error-codes/webservices-annotation-error-codes.adoc[WS: WebServices Annotation Error Codes]

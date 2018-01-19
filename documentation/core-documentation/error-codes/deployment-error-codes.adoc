@@ -1,0 +1,26 @@
+[[deployment-error-codes]]
+= Deployment Error Codes (DEP)
+
+Deployment errors concern issues with deploying applications, modules, and
+libraries to Payara Server.
+
+|===
+|Error Code | Description
+
+|DEP0001
+|Application validation fails for given application: `<application name>`.
+
+|DEP0002
+|Duplicate (_pre-existing_) descriptor found for given jndi-name: `<JNDI name>`.
+
+|DEP0003
+|Lookup failed for given jndi-name: `<JNDI name>`.
+
+|DEP0004
+|Deployment failed due to the conflict occur for jndi-name: `<JNDI name>` for 
+application: `<application name>`.
+
+|DEP0005
+|Deployment failed due to the invalid scope defined for jndi-name:
+`<JNDI name>`.
+|===

@@ -1,0 +1,105 @@
+[[connector-error-codes]]
+= Connector Error Codes
+
+Error codes RAR700 to 7110 concern `endpoint-factory` errors.
+
+Error codes RAR8501 to RAR8700 concern `connectors-runtime` errors.
+
+|===
+|Error Codes | Description | Option | Resolution
+
+|RAR7004l
+|MDB Deployment is still happening. Cannot create endpoint now.
+|Resource Adapter is requesting endpoints to the MDB, before MDB deployment is complete.
+|
+
+|RAR7007
+|The method is not defined : [ `<method name>` ]
+|Resource Adapter is trying to invoke an unknown method during message delivery.
+
+`_or_`
+
+Check your resource adapter documentation for possible issues during message delivery.
+|
+
+|RAR7110
+|Error while loading connector resources during recovery : `<resource adapter>`
+|Error getting connector resource configs.
+
+`_or_`
+
+Lookup failed for the connector resource. Not found in jndi.
+
+`_or_`
+
+Error loading the embedded RAR.
+|
+
+|RAR8501
+|Exception during endpoint activation for ra [ `<resource adapter>` ], activationSpecClass
+[ `<activation spec class name>` ] : `<exception>`
+|An exception occurred while creating an instance of the activation spec
+JavaBean, validating it, associating it with the ra, or invoking the ra's
+`ResourceAdapter#endpointActivation` method.
+
+`_or_`
+
+Unable to activate endpoint with provided activation configuration
+|Check whether activation configuration is correct.
+
+`_or_`
+
+Check whether activation configuration is violating validation constraints.
+
+`_or_`
+
+Check the server.log for related exceptions.
+
+|RAR8502
+|Error creating ActivationSpec : `<exception>` , set FINEST log level to get complete
+exception stack trace.
+|Error while creating activation-spec object.
+|Check whether activation configuration is correct.
+
+|RAR8503
+|Exception while creating ActivationSpec and getting inbound resources for
+recovery.
+|Possible exception while creating instance of ActivationSpec.
+
+`_or_`
+
+Possible exception while acquiring inbound resource for recovery.
+
+|Check the server.log for ActivationSpec instantiation related exceptions
+
+`_or_`
+
+Check the server.log for inbound XA Resource acquisition related exceptions
+
+|RAR8504
+|Exception during inbound recovery.
+|Possible exception while creating instance of ActivationSpec.
+
+`_or_`
+
+Possible exception while acquiring inbound resource for recovery.
+
+`_or_`
+
+Possible exception while bootstrapping RAR.
+|Check the server.log for ActivationSpec instantiation related exceptions.
+
+`_or_`
+
+Check the server.log for inbound XA Resource acquisition related exceptions.
+
+`_or_`
+
+Check the server.log for RAR bootstrap related exceptions.
+
+|RAR8505
+|Application [ `<application name>` ] does not seem to have started, Skipping Inbound Recovery
+for the application.
+|Application has not started.
+|Check the server.log for application start related exceptions.
+|===
