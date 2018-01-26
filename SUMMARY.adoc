@@ -176,6 +176,7 @@
 *** link:documentation/user-guides/connection-pools/validation.adoc[Connection validation]
 *** link:documentation/user-guides/connection-pools/leak-detection.adoc[Statement and Connection Leak Detection]
 ** link:documentation/user-guides/bypassing-jms-connections-through-a-firewall.adoc[Bypassing JMS Connections through a Firewall]
+** link:documentation/user-guides/using-the-maven-cargo-plugin.adoc[Using the Maven Cargo Plugin]
 * link:documentation/ecosystem/ecosystem.adoc[Ecosystem]
 ** link:documentation/ecosystem/maven-plugin.adoc[Payara Micro Maven Plugin]
 ** link:documentation/ecosystem/netbeans-plugin.adoc[Payara NetBeans Plugin]
